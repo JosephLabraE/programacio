@@ -1,0 +1,14 @@
+<section>
+    @if(productos.length > 0){
+    <ul>
+        @for(producto of productos; track producto.id){
+            {{producto.nombre}} - {{producto.precio}}
+            {{producto.activo ? 'Activo' : 'Inactivo'}}
+            <br>
+        }
+    </ul>
+    }@else{
+        <p>No hay productos xd</p>
+    }
+
+</section>
